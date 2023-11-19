@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bn5e2tkehc7v7"
+path="res://.godot/imported/televisionAntenna.obj-48ca9f29ad371c20c5ae11e7646639e7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/televisionAntenna.obj-48ca9f29ad371c20c5ae11e7646639e7.mesh"]
+
+source_file="res://third-party/kenney_furniture-kit/Models/OBJ format/televisionAntenna.obj"
+dest_files=["res://.godot/imported/televisionAntenna.obj-48ca9f29ad371c20c5ae11e7646639e7.mesh", "res://.godot/imported/televisionAntenna.obj-48ca9f29ad371c20c5ae11e7646639e7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

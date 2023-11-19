@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c70puyufsam8f"
+path="res://.godot/imported/ceilingFan.obj-0329386781cd91f8f77120e2f265707e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ceilingFan.obj-0329386781cd91f8f77120e2f265707e.mesh"]
+
+source_file="res://third-party/kenney_furniture-kit/Models/OBJ format/ceilingFan.obj"
+dest_files=["res://.godot/imported/ceilingFan.obj-0329386781cd91f8f77120e2f265707e.mesh", "res://.godot/imported/ceilingFan.obj-0329386781cd91f8f77120e2f265707e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

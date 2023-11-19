@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dj2a6yhd732to"
+path="res://.godot/imported/kitchenSink.obj-235bd03d110a3946a58b8dd60252bb9e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/kitchenSink.obj-235bd03d110a3946a58b8dd60252bb9e.mesh"]
+
+source_file="res://third-party/kenney_furniture-kit/Models/OBJ format/kitchenSink.obj"
+dest_files=["res://.godot/imported/kitchenSink.obj-235bd03d110a3946a58b8dd60252bb9e.mesh", "res://.godot/imported/kitchenSink.obj-235bd03d110a3946a58b8dd60252bb9e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

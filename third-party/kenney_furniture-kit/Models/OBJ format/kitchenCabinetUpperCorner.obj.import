@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://baaag80j4tbj4"
+path="res://.godot/imported/kitchenCabinetUpperCorner.obj-f1f9d7844780672f4d4253707f53392f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/kitchenCabinetUpperCorner.obj-f1f9d7844780672f4d4253707f53392f.mesh"]
+
+source_file="res://third-party/kenney_furniture-kit/Models/OBJ format/kitchenCabinetUpperCorner.obj"
+dest_files=["res://.godot/imported/kitchenCabinetUpperCorner.obj-f1f9d7844780672f4d4253707f53392f.mesh", "res://.godot/imported/kitchenCabinetUpperCorner.obj-f1f9d7844780672f4d4253707f53392f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://t4rnbytme4ch"
+path="res://.godot/imported/cardboardBoxOpen.obj-2a01d775f03fca5a79a0a0dbed8543af.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cardboardBoxOpen.obj-2a01d775f03fca5a79a0a0dbed8543af.mesh"]
+
+source_file="res://third-party/kenney_furniture-kit/Models/OBJ format/cardboardBoxOpen.obj"
+dest_files=["res://.godot/imported/cardboardBoxOpen.obj-2a01d775f03fca5a79a0a0dbed8543af.mesh", "res://.godot/imported/cardboardBoxOpen.obj-2a01d775f03fca5a79a0a0dbed8543af.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

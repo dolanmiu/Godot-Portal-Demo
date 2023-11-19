@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://by5cum7joypak"
+path="res://.godot/imported/tableGlass.obj-cac99381b91056b924b5d5bf895e6fa1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tableGlass.obj-cac99381b91056b924b5d5bf895e6fa1.mesh"]
+
+source_file="res://third-party/kenney_furniture-kit/Models/OBJ format/tableGlass.obj"
+dest_files=["res://.godot/imported/tableGlass.obj-cac99381b91056b924b5d5bf895e6fa1.mesh", "res://.godot/imported/tableGlass.obj-cac99381b91056b924b5d5bf895e6fa1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

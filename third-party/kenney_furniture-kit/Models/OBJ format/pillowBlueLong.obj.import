@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c53gylr6aj4eq"
+path="res://.godot/imported/pillowBlueLong.obj-739c3dd5f5dd462dea518c5a3d329955.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pillowBlueLong.obj-739c3dd5f5dd462dea518c5a3d329955.mesh"]
+
+source_file="res://third-party/kenney_furniture-kit/Models/OBJ format/pillowBlueLong.obj"
+dest_files=["res://.godot/imported/pillowBlueLong.obj-739c3dd5f5dd462dea518c5a3d329955.mesh", "res://.godot/imported/pillowBlueLong.obj-739c3dd5f5dd462dea518c5a3d329955.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvyhigs3dllyu"
+path="res://.godot/imported/kitchenBar.obj-05d3d29a1639849e158f36ab0e29b7e3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/kitchenBar.obj-05d3d29a1639849e158f36ab0e29b7e3.mesh"]
+
+source_file="res://third-party/kenney_furniture-kit/Models/OBJ format/kitchenBar.obj"
+dest_files=["res://.godot/imported/kitchenBar.obj-05d3d29a1639849e158f36ab0e29b7e3.mesh", "res://.godot/imported/kitchenBar.obj-05d3d29a1639849e158f36ab0e29b7e3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

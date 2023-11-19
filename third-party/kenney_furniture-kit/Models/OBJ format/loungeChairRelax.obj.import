@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dq8l4vlixjthk"
+path="res://.godot/imported/loungeChairRelax.obj-ae50a59c28f660ded108abca16b13e71.mesh"
+
+[deps]
+
+files=["res://.godot/imported/loungeChairRelax.obj-ae50a59c28f660ded108abca16b13e71.mesh"]
+
+source_file="res://third-party/kenney_furniture-kit/Models/OBJ format/loungeChairRelax.obj"
+dest_files=["res://.godot/imported/loungeChairRelax.obj-ae50a59c28f660ded108abca16b13e71.mesh", "res://.godot/imported/loungeChairRelax.obj-ae50a59c28f660ded108abca16b13e71.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

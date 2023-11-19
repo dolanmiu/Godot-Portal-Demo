@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5s7xj30pv0h7"
+path="res://.godot/imported/deskCorner.obj-f5d0eb5bbe40c2d0feeb473dd9bf0424.mesh"
+
+[deps]
+
+files=["res://.godot/imported/deskCorner.obj-f5d0eb5bbe40c2d0feeb473dd9bf0424.mesh"]
+
+source_file="res://third-party/kenney_furniture-kit/Models/OBJ format/deskCorner.obj"
+dest_files=["res://.godot/imported/deskCorner.obj-f5d0eb5bbe40c2d0feeb473dd9bf0424.mesh", "res://.godot/imported/deskCorner.obj-f5d0eb5bbe40c2d0feeb473dd9bf0424.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
