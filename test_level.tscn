@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cg7stpam224u4"]
+[gd_scene load_steps=9 format=3 uid="uid://cg7stpam224u4"]
 
 [ext_resource type="ArrayMesh" uid="uid://b006lqhgtu3dh" path="res://third-party/kenney_furniture-kit/Models/OBJ format/loungeSofaOttoman.obj" id="1_48esw"]
 [ext_resource type="ArrayMesh" uid="uid://b6jqcjy44sdp4" path="res://third-party/kenney_furniture-kit/Models/OBJ format/loungeSofa.obj" id="2_co7uj"]
+[ext_resource type="ArrayMesh" uid="uid://dvlsbh141vh0u" path="res://third-party/kenney_furniture-kit/Models/OBJ format/televisionVintage.obj" id="3_ntvrj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iu4vd"]
 size = Vector3(11.9122, 1, 23.6314)
@@ -14,6 +15,9 @@ points = PackedVector3Array(-0.0951605, 0.46, 0.41, 0, 0.36999, 0.41, -0.0951605
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_usad6"]
 points = PackedVector3Array(-0.470043, 0.23, 0.04, -0.909828, 0.23, 0.04, -0.470043, 0.13999, 0.04, -0.470043, 0.23, -0.41, -0.909828, 0.13999, 0.04, -0.909828, 0.23, -0.41, -0.49002, 0, 0.0199579, -0.470043, 0.13999, -0.41, -0.889852, 0, 0.0199579, -0.909828, 0.13999, -0.41, -0.49002, 0, -0.390002, -0.889852, 0, -0.390002)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_afkhf"]
+points = PackedVector3Array(0, 0.27, 0.199989, -0.155797, 0.231916, 0.27, -0.0757312, 0.231916, 0.249993, 0, 0, 0.199989, 0, 0.27, 0, -0.41, 0.27, 0.199989, -0.155797, 0.108122, 0.27, -0.254243, 0.231916, 0.27, -0.0757312, 0.0380579, 0.249993, 0, 0, 0, -0.41, 0, 0.199989, -0.41, 0.27, 0, -0.334309, 0.231916, 0.249993, -0.254243, 0.108122, 0.27, -0.334309, 0.0380579, 0.249993, -0.302002, 0, 0, -0.41, 0, 0.00999021, -0.41, 0.230673, 0)
 
 [node name="Node" type="Node"]
 
@@ -55,3 +59,12 @@ skeleton = NodePath("../../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_usad6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.94316, 0.95026, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = ExtResource("3_ntvrj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_afkhf")
