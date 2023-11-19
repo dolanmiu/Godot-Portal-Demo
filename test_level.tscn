@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg7stpam224u4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iu4vd"]
+size = Vector3(11.9122, 1, 23.6314)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v68sw"]
+size = Vector3(11.824, 6.73598, 1)
+
+[node name="Node" type="Node"]
+
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(1.00188, 0, 0, 0, 1.00188, 0, 0, 0, 1.00188, -0.0614219, -0.0526476, 2.18899)
+size = Vector3(11.3436, 1, 23.8955)
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Floor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D2"]
+shape = SubResource("BoxShape3D_iu4vd")
+
+[node name="Wall_1" type="CSGBox3D" parent="."]
+transform = Transform3D(1.00377, 0, 0, 0, 1.00377, 0, 0, 0, 1.00377, -0.110185, 3.61975, -9.11998)
+size = Vector3(11.3436, 6.45982, 1.36417)
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Wall_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_1/StaticBody3D2"]
+shape = SubResource("BoxShape3D_v68sw")

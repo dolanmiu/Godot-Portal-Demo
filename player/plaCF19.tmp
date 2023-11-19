@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cey3vhnchkcmw"]
+[gd_scene load_steps=3 format=3 uid="uid://cey3vhnchkcmw"]
 
 [ext_resource type="Script" path="res://player/movement.gd" id="1_6u7ee"]
-[ext_resource type="AudioStream" uid="uid://c26ffp7enrmlk" path="res://sounds/land.ogg" id="2_ctfo8"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q05bh"]
 
@@ -12,7 +11,4 @@ script = ExtResource("1_6u7ee")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_q05bh")
 
-[node name="Camera" type="Camera3D" parent="."]
-
-[node name="LandSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_ctfo8")
+[node name="Camera3D" type="Camera3D" parent="."]
