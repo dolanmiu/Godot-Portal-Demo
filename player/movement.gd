@@ -1,12 +1,12 @@
 extends CharacterBody3D
 
-@onready var camera = $Camera
+signal health_updated
 
 @export_subgroup("Properties")
 @export var movement_speed = 5
 @export var jump_strength = 8
 
-@export_subgroup("Weapons")
+@export var crosshair: TextureRect
 
 var mouse_sensitivity = 700
 var gamepad_sensitivity := 0.075
@@ -30,9 +30,7 @@ var container_offset = Vector3(1.2, -1.1, -2.75)
 
 var tween: Tween
 
-signal health_updated
-
-@export var crosshair: TextureRect
+@onready var camera = $Camera
 
 
 func _ready():

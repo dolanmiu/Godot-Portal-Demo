@@ -1,10 +1,10 @@
 extends Camera3D
 
 @export_range(0.0, 1.0) var sensitivity: float = 0.25
-@onready var character = $CharacterBody3D
-
 var _mouse_position = Vector2(0, 0)
 var _total_pitch = 0
+
+@onready var character = $CharacterBody3D
 
 
 # Called when the node enters the scene tree for the first time.
