@@ -8,10 +8,9 @@ func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta):
+
+func _physics_process():
 	var diff = _player.global_position - _portal.global_position
 	print(diff)
 	position = _other_portal.global_position - diff
 	look_at(_other_portal.global_position)
-	pass
