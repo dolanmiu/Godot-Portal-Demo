@@ -32,7 +32,6 @@ var tween:Tween
 
 signal health_updated
 
-
 @export var crosshair: TextureRect
 
 func _ready():
@@ -42,31 +41,26 @@ func _physics_process(delta):
 	# Handle functions
 	handle_controls(delta)
 	handle_gravity(delta)
-	
+
 	# Movement
 	var applied_velocity: Vector3
 	movement_velocity = transform.basis * movement_velocity # Move forward
-	
+
 	applied_velocity = velocity.lerp(movement_velocity, delta * 10)
 	applied_velocity.y = -gravity
-	
+
 	velocity = applied_velocity
 	move_and_slide()
-	
+
 	# Rotation
-	
+
 	camera.rotation.z = lerp_angle(camera.rotation.z, -input_mouse.x * 25 * delta, delta * 5)	
-	
+
 	camera.rotation.x = lerp_angle(camera.rotation.x, rotation_target.x, delta * 25)
 	rotation.y = lerp_angle(rotation.y, rotation_target.y, delta * 25)
-	
-	
-	# Movement sound
-	
-	# Landing after jump or falling
-	
+
 	camera.position.y = lerp(camera.position.y, 0.0, delta * 5)
-	
+
 	if is_on_floor() and gravity > 1 and !previously_floored: # Landed
 		$LandSound.play()
 		camera.position.y = -0.1
@@ -79,7 +73,6 @@ func _physics_process(delta):
 		get_tree().reload_current_scene()
 
 # Mouse movement
-
 func _input(event):
 	if event is InputEventMouseMotion and mouse_captured:
 
@@ -106,10 +99,14 @@ func handle_controls(_delta):
 
 	# Rotation
 	var rotation_input := Input.get_vector("camera_right", "camera_left", "camera_down", "camera_up")
-	
-	rotation_target -= Vector3(-rotation_input.y, -rotation_input.x, 0).limit_length(1.0) * gamepad_sensitivity
+
+	rotation_target -= Vector3(
+		-rotation_input.y,
+		-rotation_input.x,
+		0
+	).limit_length(1.0) * gamepad_sensitivity
 	rotation_target.x = clamp(rotation_target.x, deg_to_rad(-90), deg_to_rad(90))
-	
+
 	# Jumping
 	if Input.is_action_just_pressed("jump"):
 
@@ -125,19 +122,14 @@ func handle_controls(_delta):
 
 # Handle gravity
 func handle_gravity(delta):
-	
 	gravity += 20 * delta
 
 	if gravity > 0 and is_on_floor():
-
 		jump_single = true
 		gravity = 0
 
 # Jumping
-
 func action_jump():
-
 	gravity = -jump_strength
-
 	jump_single = false;
 	jump_double = true;
