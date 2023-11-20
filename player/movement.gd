@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+@onready var camera = $Camera
+
 @export_subgroup("Properties")
 @export var movement_speed = 5
 @export var jump_strength = 8
@@ -30,11 +32,8 @@ var tween:Tween
 
 signal health_updated
 
-@onready var camera = $Camera
 
-@export var crosshair:TextureRect
-
-# Functions
+@export var crosshair: TextureRect
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
